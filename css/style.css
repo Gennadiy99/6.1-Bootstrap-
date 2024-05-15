@@ -2,12 +2,15 @@
   box-sizing: border-box;
 }
 :root {
-  --colorText: red;
   --colorRed: red;
   --colorOrange: orange;
   --colorBlue: blue;
   --colorGreen: green;
   --colorBrown: brown;
+  --colorBlack: black;
+  --colorWhite: white;
+  --bgc1: rgb(133, 51, 106);
+  --bgc2: rgb(51, 133, 132);
 }
 @media (max-width: 300px) {
   .wrapper {
@@ -43,4 +46,32 @@
     background-color: #aa71a9;
     color: white;
   }
+}
+/* классы для позиционирования */
+.section {
+  margin-bottom: 15px;
+}
+.relative {
+  position: relative;
+}
+.stiky {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
+}
+.title_color1 {
+  background-color: var(--bgc1);
+  color: var(--colorWhite);
+  text-align: center;
+}
+.title_color2 {
+  background-color: var(--bgc2);
+  color: var(--colorWhite);
+  text-align: center;
+}
+.title_size {
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 10px;
 }
