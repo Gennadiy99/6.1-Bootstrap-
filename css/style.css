@@ -46,6 +46,10 @@
     background-color: #aa71a9;
     color: white;
   }
+  a {
+    color: var(--bgc1);
+    font-weight: 600;
+  }
 }
 /* классы для позиционирования */
 .section {
