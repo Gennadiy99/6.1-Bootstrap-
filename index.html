@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>6.1 Обзор, загрузка и подключение</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -285,6 +286,67 @@
               >
             </li>
           </ul>
+          <p>
+            При подключении в "head" свойства "link" можно установить иконку
+            сайта, которую будет видно в закладках. Для этого при наборе "link"
+            нужно выбрать из списка "link:favicon" и добавится шаблонная строка:
+            <code>
+              &ltlink rel="shortcut icon" <b>href="favicon.ico"</b>
+              type="image/x-icon"&gt
+            </code>
+            в которой нужно указать путь к картинке которая находится в папке
+            проэкта:
+            <code>
+              <b>href="img/favicon.ico"</b>
+            </code>
+          </p>
+          <p>
+            При подключении стилей нужно свой файл style.css подключать в самом
+            низу что бы он имел приоритет перед другими css файлами.
+          </p>
+          <p>
+            О создании разметки на "Bootstrap" можно посмотреть в Документации в
+            разделе "Макеты - Layout" - "Grid"
+          </p>
+          <p>Начинаем писать разметку:</p>
+          <ul>
+            <li>&ltheader&gt - тег в которм содержится верхняя часть сайта</li>
+            <li>
+              &ltdiv class="container"&gt &lt/div&gt - Обязательный класс
+              Bootstrap который используется как ограничитель сайта по ширине.
+            </li>
+            <li>
+              &ltdiv class="row"&gt &lt/div&gt - Отвечает в <b>"Botstrap"</b> за
+              создание строки
+            </li>
+            <li>
+              &ltdiv class="col"&gt &lt/div&gt - Отвечает за создание колонок
+            </li>
+          </ul>
+          <p>
+            Сетка Bootstrapa расчитана на 12 столбцов, когда пишем col9 - Это
+            означает что одна колонка занимает 9 столбцов, значит остается еще 3
+            свбободных для следующей колонки.
+          </p>
+          <p>Пример кода:</p>
+          <pre>
+              <code>
+                <header>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col12">Column</div>
+                    </div>
+                  </div>
+                </header>
+              </code>
+            </pre>
+
+          <p>
+            В документации сайта в разделе <b>" Контент" - "Типографика"</b>
+            описываются разные классы на "Bootstrap"
+          </p>
+          <p>Цвета описываются в разделе "Утилиты" - "Цвета"</p>
+          <p>О кнопка описываетс в "Компоненты" - "Кнопки"</p>
         </div>
       </div>
     </div>
