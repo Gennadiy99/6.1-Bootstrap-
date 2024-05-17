@@ -397,19 +397,23 @@
           </p>
           <p>Выглядит это примерно так:</p>
           <pre>
-            &ltdiv class="modal-body"&gt
-            <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
-            &ltdiv class='embed-container'><iframe src='https://www.youtube.com/embed/RIBID1WoIJA' frameborder='0' allowfullscreen></iframe>
-            &lt/div&gt
+            <code>
+              &ltdiv class="modal-body"&gt
+              &ltstyle&gt .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; } &lt/style&gt
+              &ltdiv class='embed-container'> &ltiframe src='https://www.youtube.com/embed/RIBID1WoIJA' frameborder='0' allowfullscreen &gt &lt/iframe&gt
+              &lt/div&gt
+            </code>
           </pre>
           <p>
             После Стили копируем из HTML и переносим в файл CSS, а из тега
             удаляем их. Пример:
           </p>
           <pre>
-            &ltdiv class="modal-body"&gt
-              &ltdiv class='embed-container'><iframe src='https://www.youtube.com/embed/RIBID1WoIJA' frameborder='0' allowfullscreen></iframe>
-            &lt/div&gt
+            <code>
+              &ltdiv class="modal-body"&gt
+                &ltdiv class='embed-container'&gt &ltiframe src='https://www.youtube.com/embed/RIBID1WoIJA' frameborder='0' allowfullscreen&gt &lt/iframe&gt
+              &lt/div&gt
+            </code>
           </pre>
         </div>
         <div>
@@ -446,9 +450,9 @@
           </ul>
 
           <pre>
-            &ltdiv class="itd-cercle">
-              <i class="icon-list-numbered"></i>
-            &lt/div>
+            &ltdiv class="itd-cercle"&gt
+              &lti class="icon-list-numbered">&lt/i&gt
+            &lt/div&gt
           </pre>
         </div>
       </div>
