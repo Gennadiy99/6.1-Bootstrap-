@@ -346,6 +346,110 @@
           <p>Цвета описываются в разделе "Утилиты" - "Цвета"</p>
           <p>Об кнопках описывается в "Компоненты" - "Кнопки"</p>
         </div>
+        <p>
+          Очень интересное использование свойства для "border" которое
+          описывается в CSS.
+        </p>
+        <ul>
+          <li>
+            border-style: solid; - Устанавливает стиль начертания границы
+            (сплошная)
+          </li>
+          <li>
+            border-width: 10px 0px 10px 30px; - Устанавливает ширину границы
+            Верх Право Низ Лево (от центра)
+          </li>
+          <li>
+            border-color: red green blue yellow - Устанавливает цвет для каждой
+            из границ
+          </li>
+          <li>
+            border-color: transparent ... - Устанавливает прозрачный цвет
+            границы
+          </li>
+        </ul>
+        <p>
+          Спицифика работы с маодальным окном
+          <b>"Bootstrap-5" Раздел "Компоненты" - "Модальные"</b> Обязательно
+          нужно связать модальное окно с кнопкой которая его вызывает. Для этого
+          в кнопке нужно указать 2 атрибутa:
+        </p>
+        <ol>
+          <li>data-bs-toggle="modal"</li>
+          <li>
+            <b>data-bs-target="#exampleModal"</b> - У кнопки и у Модального окна
+            должен быть один id. Если менять то 2х местах нужно поменять
+            название.
+          </li>
+        </ol>
+        <p>
+          Для встраивания Адаптивного видео, ноужно зайти на "You tube" нажать
+          кнопку поделиться скопировать ссылку на видео. После чего перейти на
+          сайт для изменения кода этого видео под Адаптивное.
+        </p>
+        <p>
+          <a href="http://embedresponsively.com/" target="blank"
+            >Переход на сайт для адаптации видео</a
+          >
+        </p>
+        <p>
+          После мы копируем новую ссылку и вставляем ее в HTML в модальное окно,
+          в div с классом class="modal-body"
+        </p>
+        <p>Выглядит это примерно так:</p>
+        <pre>
+          &ltdiv class="modal-body"&gt
+          <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+          &ltdiv class='embed-container'><iframe src='https://www.youtube.com/embed/RIBID1WoIJA' frameborder='0' allowfullscreen></iframe>
+          &lt/div&gt
+        </pre>
+        <p>
+          После Стили копируем из HTML и переносим в файл CSS, а из тега удаляем
+          их. Пример:
+        </p>
+        <pre>
+          &ltdiv class="modal-body"&gt
+            &ltdiv class='embed-container'><iframe src='https://www.youtube.com/embed/RIBID1WoIJA' frameborder='0' allowfullscreen></iframe>
+          &lt/div&gt
+        </pre>
+      </div>
+      <div>
+        <h3 class="stiky title_size title_color1">
+          6.3 Сетка 3 на 3 и иконки.
+        </h3>
+        <p>
+          В этом уроке я расскажу вам как работать с сеткой Bootstrap 5, как
+          устроена сетка Bootstrap 5 и как делать адаптивные элементы с помощью
+          сетки Bootstrap 5 легко и быстро. Мы создадим раздел с информацией о
+          курсе, где будут использоваться иконки и сетка Bootstrap 5 размером 3
+          на 3.
+        </p>
+        <p>
+          <u><b>Материал урока:</b></u>
+        </p>
+        <p>
+          В "Bootstrap" имеются классы для установки ширины колонки относительно
+          размеров экрана. В Документации в разделе "Сетка" рассписывается ее значения.
+        </p>
+        <ul>
+          <li><b>col-xl-4</b> - Колонка занимает 4/12 на больщом р-экр.</li>
+          <li><b>col-md-6</b> - Колонка занимает 6/12 на среднем р-экр.</li>
+          <li><b>col-sm-12</b> - Колонка занимает 12/12 на малом р-экр.</li>
+        </ul>
+        <p>Вставка эконки в <b>div</b>:</p>
+        <ul>
+          <li>Создаем <b>div</b></li>
+          <li>Заходим в файл <b>"fontello.css"</b></li>
+          <li>Копируем название класса без <u>точки и :before</u></li>
+          <li>Создаем в <b>div</b> тег <b>&lti&gt</b></li>
+          <li>Добавляем скопированный класс тегу <b>&lti&gt</b></li>
+        </ul>
+
+        <pre>
+          &ltdiv class="itd-cercle">
+            <i class="icon-list-numbered"></i>
+          &lt/div>
+        </pre>
       </div>
     </div>
 
