@@ -494,6 +494,75 @@
             target="_blank"
             >Документация Bootstrap 5 по Аккордеону</a
           >
+          <p>По Аккордеону находится информация в "Компонеты" - "АККОРДИОН"</p>
+          <p>
+            <b><u>Материал урока:</u></b>
+          </p>
+          <p>
+            Напоминание, что использовать цвет фона для нескольких секций, можно
+            через добавления в стилях класса через запятую, оба класса будут
+            иметь один стиль фона:
+          </p>
+          <pre>
+            .about, .shedule {
+                background-color: #eee;
+              }
+          </pre>
+          <p>
+            Создаем "Секцию" и обычную разметку Bootstrap, Для "Аккардиона"
+            создадим колонку <code>"col-md-4 col-sm-12"</code> что бы на
+            сред.экране было 3колонки а на мал.экр была Одна колонка. И в эту
+            колонку будем вставлять код "Аккордиона" Пример разметки:
+          </p>
+          <pre>
+              &ltsection class="shedule">
+                &ltdiv class="container">
+                  &ltdiv class="row">
+                  &ltdiv class="col-12">
+                      &lth2 class="text-center text-uppercase color1 mb-3">
+                        Программа курса
+                      &lt/h2>
+                    &lt/div>
+                  &lt/div>
+                  &ltdiv class="row">
+                    &ltdiv class="col-md-4 col-sm-12">
+                      &lth4 class="text-center fw-bold mb-3 mt-3">
+                        Модуль 1 &ltbr/>
+                        (HTML)
+                      &lt/h4>
+                      ЗДЕСЬ БУДЕТ КОД АККОРДИОНА.
+                    &lt/div>
+                  &lt/div>
+              &lt/section>
+          </pre>
+          <p>Некоторый Синтаксис написани кода Bootstrap:</p>
+          <ul>
+            <li><code>container</code> - контейнер ограничивающий ширину</li>
+            <li>
+              <code>row</code> - Строка, посути блок в котором расположены элем.
+            </li>
+            <li>
+              <code>col-md-4</code> - Колонка, с указанием ее Обьема
+              <b>-4</b> при Размере экрана <b>md</b>
+            </li>
+            <li>
+              <code>text-center</code> - Стиль равен=
+              <code>"text-align:center;"</code> выравнивание текста по середине.
+            </li>
+            <li><code>text-uppercase</code> - Текст в верхнем регистре.</li>
+            <li>
+              <code>mb-3</code> - Стиль равен=
+              <code>"margin-bottom:3px;"</code> 3px - это примерая величина
+              отступа.
+            </li>
+            <li>
+              <code>mt-3</code> - Стил равен= <code>"mrgin-top:3px;"</code>
+            </li>
+            <li>
+              <code>fw-bold</code> - Стиль равен=
+              <code>font-weight: bold;</code>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
