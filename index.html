@@ -46,8 +46,8 @@
           </p>
           <p>
             <u>На сайте интересует страница скачать</u> <b>"Download"</b>: Что
-            бы все возможности Bootstrap работали полностью, в разделе:<br>
-            "Исходные файлы" - "Source files" <br>
+            бы все возможности Bootstrap работали полностью, в разделе:<br />
+            "Исходные файлы" - "Source files" <br />
             нажимаем кнопку "скачать" - "download source",
           </p>
           <p>
@@ -112,7 +112,7 @@
           <p>
             Что бы использовать снипиты: нужно в коде html написать:
             <b>"b5"</b> и появится список для выбора свойств Bootstrap для
-            создание, форм / контейнеров / цветов и т.д.<br>
+            создание, форм / контейнеров / цветов и т.д.<br />
             Ниже мы используем снипит,- "form" и вставим ее в контейнер, и
             быстро получим форму обернутую в контейнер.
           </p>
@@ -578,7 +578,7 @@
           </p>
           <p>
             Загрузив код видно уже работающий Аккордион. Но мы можем его
-            корректировать.<br>
+            корректировать.<br />
             Допустим, при нажатии на Аккордион меняется цвет его фона,
             <u
               >это можно изменить <b>переопределением стилей</b> этого
@@ -626,12 +626,12 @@
             <b
               >Изменение стиля, делаем в Аккордионе, что бы один элемент был
               открытый изначально.</b
-            ><br>
+            ><br />
             Делается это в html файле. Мы видим скопированный Аккордион в
             котором каждый элемент начанается с
-            <code><b>&ltdiv class="accordion-item"> &lt/div></b></code> <br>
+            <code><b>&ltdiv class="accordion-item"> &lt/div></b></code> <br />
             в нутри аккордиона есть кнопка <b>"botton"</b> в которой указывается
-            Название этой кнопки (меняем под необходимое). <br>
+            Название этой кнопки (меняем под необходимое). <br />
             Сам текс который появляется при нажатии, указывается в
             <code><b> &ltdiv class="accordion-body" &gt </b></code>
           </p>
@@ -641,29 +641,29 @@
           <p>
             В первом <b>div</b> аккордиона есть атрибут <b>id</b> (<i
               >Название аккордиона: <b>id="accordionFlushExample"</b></i
-            >) который связан с всеми вложенными в него элементами <br>
+            >) который связан с всеми вложенными в него элементами <br />
             <code>
               &ltdiv class="accordion accordion-flush"
               <b>id="accordionFlushExample"</b>> &lt/div>
             </code>
-            <br>
+            <br />
             в каждом элементе есть <b>div</b> с атрибутом в котором указан этот
             родительский <b>id</b>
-            <code>data-bs-parent="<b>#accordionFlushExample</b>"</code> <br>
+            <code>data-bs-parent="<b>#accordionFlushExample</b>"</code> <br />
             Если менять <u>название акордиона</u>, то нужно менять его во
             <u>всех атрибутах</u> <b>data-bs-parent</b> <u>каждого элемента</u>.
           </p>
           <p>
             Следующая связь через <b>id</b> между: тегом <b>h2</b> в котором
-            находится кнопка <b>bottom с заголовком</b><br>
+            находится кнопка <b>bottom с заголовком</b><br />
             <code>
               &lth2 class="accordion-header" <b>id="flush-headingOne"</b>>
               &lt/h2>
             </code>
-            <br>
+            <br />
             И <b>div</b> с артрибутом
             <code>aria-labelledby=<b>"flush-headingOne"</b></code> в котором
-            находится div с текстом <u>видный при нажатии на кнопку</u>. <br>
+            находится div с текстом <u>видный при нажатии на кнопку</u>. <br />
             <i>
               <u>
                 По этому если менять связь между заголовком кнопки и текстом то
@@ -689,11 +689,11 @@
           </ul>
           <p>
             Так же связаны между собой Кнопка и DIV с текстом. Через атрибуты в
-            кнопке: <br>
-            <code>data-bs-target=<b>"#flush-collapseOne"</b></code> <br>
-            <code>aria-controls=<b>"flush-collapseOne"</b></code> <br>
-            И через <b>"id"</b> в <b>DIV</b>: <br>
-            <code>id=<b>"flush-collapseOne"</b></code> <br>
+            кнопке: <br />
+            <code>data-bs-target=<b>"#flush-collapseOne"</b></code> <br />
+            <code>aria-controls=<b>"flush-collapseOne"</b></code> <br />
+            И через <b>"id"</b> в <b>DIV</b>: <br />
+            <code>id=<b>"flush-collapseOne"</b></code> <br />
             <u>Если менять название атрибутов то вместе с id</u>
           </p>
           <p>
@@ -726,16 +726,17 @@
                 data-bs-parent="#accordion1"
               >
                 <div class="accordion-body fst-italic">
-                  В первом div Аккардиона<br>
+                  В первом div Аккардиона<br />
                   <code>
                     &ltdiv class="accordion accordion-flush"
-                    <u>id="accordion1"</u>>&gt &lt/div&gt
-                  </code><br>
+                    <u>id="accordion1"</u>>&gt &lt/div&gt </code
+                  ><br />
                   Нужно связать его <u>id="accordion1"</u> с всеми элементами
-                  через их атрибуты: <br>
-                  <code> data-bs-parent=<u>"#accordion1"</u> </code><br>
-                  Это нужно для того,-  если на странице будет долее 1го
-                  аккардиона, чтобы управленеие каждого Аккардиона своими элементами, было автономным и не перемешивались.
+                  через их атрибуты: <br />
+                  <code> data-bs-parent=<u>"#accordion1"</u> </code><br />
+                  Это нужно для того,- если на странице будет долее 1го
+                  аккардиона, чтобы управленеие каждого Аккардиона своими
+                  элементами, было автономным и не перемешивались.
                 </div>
               </div>
             </div>
@@ -760,12 +761,13 @@
                 data-bs-parent="#accordion1"
               >
                 <div class="accordion-body fst-italic">
-                  Заголовок кнопки:<br>
+                  Заголовок кнопки:<br />
 
                   <code>
-                    &lth2 class="accordion-header" <u>id="heading1"</u>&gt &lt/h2&gt
-                  </code><br>
-                  Связывается с "главным" "div" текста через атрибут: <br>
+                    &lth2 class="accordion-header" <u>id="heading1"</u>&gt
+                    &lt/h2&gt </code
+                  ><br />
+                  Связывается с "главным" "div" текста через атрибут: <br />
                   <code> aria-labelledby=<u>"heading1"</u> </code>
                 </div>
               </div>
@@ -791,16 +793,18 @@
                 data-bs-parent="#accordion1"
               >
                 <div class="accordion-body fst-italic">
-                  Для этого нужно в Кнопк "button":<br>
+                  Для этого нужно в Кнопк "button":<br />
                   <code>
-                    class="accordion-button <b><s>collapsed</s></b>"
-                  </code><br>
-                  Удалить класс <b>"collapsed"</b>"<br>
-                  А у главного <b>"div"</b> текста с классами:<br>
-                  <code> class="accordion-collapse collapse" </code><br>
-                  Добавить <b>класс "show"</b><br>
+                    class="accordion-button <b><s>collapsed</s></b
+                    >" </code
+                  ><br />
+                  Удалить класс <b>"collapsed"</b>"<br />
+                  А у главного <b>"div"</b> текста с классами:<br />
+                  <code> class="accordion-collapse collapse" </code><br />
+                  Добавить <b>класс "show"</b><br />
                   <code>
-                    class="accordion-collapse collapse <b><u>show</u></b>"
+                    class="accordion-collapse collapse <b><u>show</u></b
+                    >"
                   </code>
                 </div>
               </div>
@@ -826,20 +830,21 @@
                 data-bs-parent="#accordion1"
               >
                 <div class="accordion-body fst-italic">
-                  Для этого нужно в Кнопке <b>"button"</b> в атрибутах:<br>
-                  <code> data-bs-target=<u>"#collapse1"</u> </code><br>
-                  <code> aria-controls=<u>"collapse1"</u> </code><br>
-                   И в "главном"
-                  <b>"div"</b> с текстом в "id": <br>
-                  <code> id=<u>"collapse1"</u> </code><br>
+                  Для этого нужно в Кнопке <b>"button"</b> в атрибутах:<br />
+                  <code> data-bs-target=<u>"#collapse1"</u> </code><br />
+                  <code> aria-controls=<u>"collapse1"</u> </code><br />
+                  И в "главном"
+                  <b>"div"</b> с текстом в "id": <br />
+                  <code> id=<u>"collapse1"</u> </code><br />
                   Указать однинаковое название - <b><u>"collapse1"</u></b>
                 </div>
               </div>
             </div>
-          <!-- </div>  Пример аккордиона: -->
+          </div>
+          <!-- Пример аккордиона: -->
         </div>
       </div>
     </div>
-      <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
