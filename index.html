@@ -1323,14 +1323,23 @@
 
           <ul>
             <li>
-              (для всех Тегов и псевдоэлементов) <b>наследование свойства "box-sizing"</b> от родительского элемента, из-за свойства - <b>"inherit"</b>
+              (для всех Тегов и псевдоэлементов) <b>наследование свойства "box-sizing"</b> от родительского элемента <b>(html)</b>, из-за свойства - <b>"inherit"</b>
               <pre>
                 *, *:before, *:after{
                   box-sizing: inherit;
                 }
               </pre>
             </li>
-            <li>Сброс отступов
+            <li>
+              Свойство box-sizing:border-box; <b>(html)</b>:
+              <pre>
+                html {
+                  box-sizing: border-box;
+                  font-size: 18px;
+                }
+              </pre>
+            </li>
+            <li>Сброс отступов.
               <pre>
                 body,p,h1,h2,h3,ul,ol{
                   margin: 0;
@@ -1338,7 +1347,7 @@
                 }
               </pre>
             </li>
-            <li>Класс Флек элементы стоят в рад
+            <li>Класс Флекc элементы, стоят в рад.
               <pre>
                 .row{
                   display: flex;
