@@ -2071,14 +2071,27 @@
                 &lta href="#user">&ltimg class="circle" src="images/yuna.jpg"></a>
                 &lta href="#name">&ltspan class="white-text name">John Doe</span></a>
                 &lta href="#email">&ltspan class="white-text email">jdandturk@gmail.com</span></a>
-              </div></li>
-              &ltli>&lta href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></ali>
-              &ltli>&lta href="#!">Second Link</a></li>
-              &ltli>&ltdiv class="divider"></div></li>
-              &ltli>&lta class="subheader">Subheader</a></li>
-              &ltli>&lta class="waves-effect" href="#!">Third Link With Waves</a></li>
-            </ul>
-            &lta href="#" data-target="slide-out" class="sidenav-trigger">&lti class="material-icons">menu</i></a>
+                &lt/div>
+              &lt/li>
+              &ltli>
+                &lta href="#!">&lti class="material-icons">cloud</i>First Link With Icon</a>
+              &lt/li>
+              &ltli>
+                &lta href="#!">Second Link &lt/a>
+              &lt/li>
+              &ltli>
+                &ltdiv class="divider">&lt/div>
+              &lt/li>
+              &ltli>
+                &lta class="subheader">Subheader&lt/a>
+              &lt/li>
+              &ltli>
+                &lta class="waves-effect" href="#!">Third Link With Waves&lt/a>
+              &lt/li>
+            &lt/ul>
+            &lta href="#" data-target="slide-out" class="sidenav-trigger">
+              &lt i class="material-icons">menu &lt/i>
+            &lt/a>
           </pre>
           <p>
             Что бы бургер-меню стал рабочим его нужно "Инициализировать" для этого нужно на сайте скачать код из окна "Initialization". Этот код подключаем в свой файл "main.js" так как он стоит вторым в файле html для подключения, после "materialize.min.js" Нужно следить за этим порядком подключения.
@@ -2113,14 +2126,14 @@
                 &ltdiv class="user-view">
                   &ltdiv class="background">
                     &ltimg src="images/office.jpg" />
-                  </div>
+                  &ltdiv>
                   &lta href="#user">&ltimg class="circle" src="images/yuna.jpg" /></a>
                   &lta href="#name">&ltspan class="white-text name">John Doe</span></a>
                   &lta href="#email"
                     >&ltspan class="white-text email">jdandturk@gmail.com</span></a
                   >
-                </div>
-              </li>
+                &lt/div>
+              &lt/li>
             </del>
           </pre>
           <p>
@@ -2360,7 +2373,26 @@
             Это говорит что <b>ЭЛЕМЕНТ ЗАЙМЕТ ВСЕ 260px</b> но может быть меньше ЕСЛИ его будут сжимать блоки, контейнеры в которых он находится!  
           </p>
         </div>
-
+        <div>
+          <h3 class="stiky title_size title_color2">7.18 Плагин Inspect Styles </h3>
+          <p>
+            ИЗ ЛИЧНЫХ НАБЛЮДЕНИЙ:<br>
+            При установке для <b>"container"</b> стилей ограничивания ширины мы ставим: <code>max-width: 1344px;</code> можно в него добавить и <code>padding-left: 24px;</code> но если <b>padding</b> будет Большой <b>315px</b> то при малой Ширине экрана он будет сжимать содержимое блоко, верстка будет выглядить не корректно. ЛУЧШЕ ОГАНИЧИВАТЬ СОДЕРЖИМОЕ ЧЕРЕЗ ШИРИНУ КОНТЕЙНЕР и маленьким Падингом
+          </p>
+          <p>
+            Для удобной работы с <b>переносом верстки на WORDPRESS</b> назначение стилей для блоков <u>(например: bacground-img: url(...);)</u> Лучше писать прям в html в самом теге. <code>style="bacground-img: url(...)";</code>
+          </p>
+          <p>
+            В основном для ширины указывается Максимальная высота: <code>max-width:</code><br>
+            А для высоты указывается: <code>min-width:</code>
+          </p>
+        </div>
+        <div>
+          <h3 class="stiky title_size title_color2">8.1 Konstruct</h3>
+          <p>
+            Самостоятельная работа по постройке сайта из макета Figma
+          </p>
+        </div>
       </div>
     </div>
     <!-- Как изменить цвет svg иконки при наведении на текст в находящийся в одном блоке с иконкой? Иконка добавлена через тег "img" -->
